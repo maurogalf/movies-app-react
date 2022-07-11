@@ -25,14 +25,16 @@ function Login() {
             return;
         }
         swAlert(<h2>Login successful</h2>);
+        /*  PETICIÓN DE TOKEN COMENTADA POR FALTA DE CERTIFICADO SSL 
         axios
-            .post('http://challenge-react.alkemy.org', { email, password })
-            .then(res => {
-                console.log(res.data)
-                const token = res.data.token;
+        .post('http://challenge-react.alkemy.org', { email, password })
+        .then(res => {
+            console.log(res.data)
+            */
+                const token = "token";
                 localStorage.setItem("token", token)
                 navigate("/listado")
-            })
+            // })
     }
     const token = localStorage.getItem('token');
     return (
