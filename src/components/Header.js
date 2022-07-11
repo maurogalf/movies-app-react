@@ -16,14 +16,14 @@ function Header() {
             <nav className="navbar navbar-dark bg-dark" >
                 <ul className='nav'>
                     <li className='nav-item'>
-                        <Link className='nav-link active' to= "/">Home</Link>
+                        <Link className='nav-link active' to= "">Home</Link>
                     </li>
                     <li className='nav-item'>
                         <Link className='nav-link active' to= "/listado">Listado</Link>
                     </li>
                     <li className='nav-item'>
                         <form onSubmit={handlerLogOut}>
-                            <button type="submit" className='nav-link active' to= "/contacto">Log out</button>                        
+                            <button type="submit" className='nav-link active' to= "/login">Log out</button>                        
                         </form>
                     </li>
                 </ul>

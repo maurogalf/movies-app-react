@@ -37,7 +37,7 @@ function Login() {
     const token = localStorage.getItem('token');
     return (
         <>
-            {token && <Navigate to="/listado" />}
+            {token && <Navigate to="movies-app-react/listado" />}
             <h1>Login</h1>
             <form onSubmit={submitHandler}>
                 <label>
