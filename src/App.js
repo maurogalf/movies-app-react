@@ -13,10 +13,10 @@ function App() {
     <div className='container'>
     <Header/>
     <Routes>
-      <Route exact path="/" element={<Login/>}/>
-      <Route path="/listado" element={<Listado/>}/>
-      <Route path="/detail" element={<Detail/>}/>
-      <Route path="/resultados" element={<Resultados/>}/>
+      <Route exact path="/movies-app-react/" element={<Login/>}/>
+      <Route path="/movies-app-react/listado" element={<Listado/>}/>
+      <Route path="/movies-app-react/detail" element={<Detail/>}/>
+      <Route path="/movies-app-react/resultados" element={<Resultados/>}/>
     </Routes>
     <Footer/>
     </div>
