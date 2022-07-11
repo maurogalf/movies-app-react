@@ -8,6 +8,7 @@ function Detail() {
     let [movieDetail, setMovieDetail] = useState(null);
 
     let query = new URLSearchParams(window.location.search)
+    console.log("query", query)
     let movieID = query.get('movieID')
     console.log(movieID)
 
