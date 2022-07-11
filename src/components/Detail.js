@@ -7,7 +7,8 @@ function Detail() {
 
     let [movieDetail, setMovieDetail] = useState(null);
 
-    let query = new URLSearchParams(window.location.hash)
+    let query = new URLSearchParams(location.hash)
+    console.log(query);
     let movieID = query.get('movieID')
 
     useEffect(() => {
