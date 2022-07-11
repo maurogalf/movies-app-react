@@ -61,7 +61,7 @@ function Login() {
                     className="btn btn-dark m-4"
                     data-bs-toggle="tooltip" data-bs-placement="top"
                     data-bs-custom-class="custom-tooltip"
-                    title='Usuario: "maurogalfonso@gmail.com", Contraseña: "react"'>Completar Automáticament</button>
+                    title='Usuario: "maurogalfonso@gmail.com", Contraseña: "react"'>Completar Automáticamente</button>
         </>
     )
 }

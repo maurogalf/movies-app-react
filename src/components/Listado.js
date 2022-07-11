@@ -21,7 +21,6 @@ function Listado() {
             swAlert(<h2>Hubo errores</h2>)
     })
     }, [setMovieList]);
-    console.log(movieList)
 
     return (
         <>

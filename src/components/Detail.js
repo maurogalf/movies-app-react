@@ -9,6 +9,7 @@ function Detail() {
 
     let query = new URLSearchParams(window.location.search)
     let movieID = query.get('movieID')
+    console.log(movieID)
 
     useEffect(() => {
         const endpointMovie = `
