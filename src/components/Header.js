@@ -16,7 +16,7 @@ function Header() {
             <nav className="navbar navbar-dark bg-dark" >
                 <ul className='nav'>
                     <li className='nav-item'>
-                        <Link className='nav-link active' to= "">Home</Link>
+                        <Link className='nav-link active' to= "/">Home</Link>
                     </li>
                     <li className='nav-item'>
                         <Link className='nav-link active' to= "/listado">Listado</Link>
