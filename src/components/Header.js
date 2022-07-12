@@ -8,7 +8,7 @@ function Header() {
 
     let handlerLogOut = (e) => {
         e.preventDefault();
-        localStorage.clear();
+        localStorage.removeItem('token');
         navigate("/")
     }
     return (
@@ -20,6 +20,9 @@ function Header() {
                     </li>
                     <li className='nav-item'>
                         <Link className='nav-link active' to= "/listado">Listado</Link>
+                    </li>
+                    <li className='nav-item'>
+                        <Link className='nav-link active' to= "/favoritos">Favoritos</Link>
                     </li>
                     <li className='nav-item'>
                         <form onSubmit={handlerLogOut}>

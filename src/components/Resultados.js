@@ -2,6 +2,7 @@ import {useEffect, useState} from 'react'
 import axios from 'axios';
 import swAlert from '@sweetalert/with-react';
 import { Link, useLocation } from 'react-router-dom';
+import FavButton from './FavButton';
 
 function Resultados() {
     const {search} = useLocation()
@@ -37,6 +38,7 @@ function Resultados() {
                 return (
             <div className='col-4 my-3' key={index}>
                 <div className="card">
+                    <FavButton idMovie={oneMovie.id}/>
                     <img src={`https://image.tmdb.org/t/p/w500/${oneMovie.poster_path}`} className="card-img-top" alt="..."/>
                         <div className="card-body">
                             <h5 className="card-title">{oneMovie.title}</h5>
